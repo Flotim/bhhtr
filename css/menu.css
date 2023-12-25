@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin:0 ;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+
+.container:not(header){
+    overflow-x: hidden;
+    margin: auto;
+    padding: 5rem 2rem;
+    background-color: rgba(239,233,224,255);
+    width: 100%;
+    
+}
+
+
+
+nav{
+    background-color: rgba(239,233,224,255);
+    margin: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    transition: top 0.5s ease-in-out, position 0.5s ease-in;
+    z-index: 1000;
+    
+}
+
+
+.telephone a{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rgba(239,233,224,255);
+
+}
+
+.nav-logo{
+    max-width: 200px;
+    padding-left: 15px;
+    transition: all 0.4s ease;
+}
+
+
+
+.nav-logo:hover{
+    transform: translateY(-9px) scale(1.1);
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: black;
+}
+
+#link2 a{
+    color: #f0543f ;
+}
+
+
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 0;
+    bottom: 1;
+    left: 0;
+    background-color: #f0543f;
+    transition: all 0.4s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+
+}
+
+.nav-links a:hover{
+    color: #f0543f;
+}
+
+
+
+
+header::before {
+    content: "";
+    display: block;
+    border-top: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.carte {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 25px;
+}
+
+
+  
+.carte a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    min-width: 140px; /* Ajustez cette valeur selon vos préférences */
+    text-align: center; /* Pour centrer le texte dans le bouton */
+    border: 1px solid rgb(83, 80, 80);
+    transition: 0.6s ease-in-out;
+}
+  
+.carte a:hover {
+    background-color: rgb(37, 36, 36);
+    color: white;
+}
+  
+
+header a{
+    color: black;
+}
+
+.origine{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+#origine img{
+    max-width: 350px;
+    width: 50%;
+}
+
+.textorigine{
+    width: 50%;
+}
+
+.textorigine h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+.imgorigine{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.composant{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.supplément{
+    font-weight: 200;
+    font-size: 10px;
+}
+
+
+
+
+.prixmenu{
+    font-weight: 100;
+    padding-top: 25px;
+    color: rgb(66, 64, 64);
+    font-size: 15px;
+}
+
+.menunormal{
+    display: flex;
+}
+
+
+.menunormal h1{
+    font-weight: 600;
+}
+
+.textmenunormal{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+
+.soustitre h3{
+    font-weight: 500;
+}
+
+.imagemenunormal{
+    width: 50%;
+}
+
+
+.menumidi h1{
+    font-weight: 600;
+}
+
+.menumidi{
+    display: flex; 
+    padding-top: 50px;
+}
+
+
+.imagemenumidi{
+    width: 50%;
+}
+
+
+.textmenumidi{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+#section2{
+    padding-top: 100px;
+}
+
+#section3{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#section3 h1{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.viande{
+    display: flex;
+    padding-top: 95px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.viande h2{
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 26px;
+}
+
+.viande p{
+    padding-top: 9px;
+    
+}
+
+
+
+.porc{
+    display: flex;
+}
+
+.imageporc{
+    width: 50%;
+}
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-top: 1px black solid;
+    gap: 10px;
+    width: 70%;
+}
+
+
+
+
+footer a{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 1000px){
+
+
+    .container{
+        overflow-x: hidden;
+        width: 100%;
+    }
+    
+    .nav-links{
+        display: table-column;
+    }
+
+    header .image::before{
+        display: none;
+    }
+
+    header H1{
+        font-size: 90px;
+    }
+
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+
+    .carte{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+        font-size: 15px;
+        padding-left: 25px;
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+
+
+
+}
+
+@media (width < 600px){
+
+    .container{
+        overflow-x: hidden;
+    }
+    
+    header .image::before{
+        display: none;
+    }
+
+    header H1{
+        font-size: 90px;
+    }
+
+
+    .origine{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 65px;
+    }
+
+
+    .origine p{
+        padding-top: 15px;
+
+    }
+
+    .imgorigine{
+        justify-content: center;
+        align-items: center;
+        padding-left: 120px;
+        
+    }
+
+    .origine h1{
+        font-size: 25px;
+
+    }
+
+    .composant{
+        display: flex;
+    }
+
+    .menumidi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .textmenunormal,.textmenumidi{
+        gap: 45px;
+    
+    }   
+
+    .textmenunormal p{
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .textmenumidi p{
+        font-size: 12px;
+    }
+
+    .menunormal{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 28px;
+
+    }
+    .telephone i{
+        font-size: 25px;
+    }
+    .phone-number{
+        display: none;
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+
+    .features{
+        width: 150px;
+    }
+}
+
+@media (width < 361px){
+
+    .container{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        display: table-column;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    header H1{
+        font-size: 70px;
+    }
+
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+
+
+
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+
+}

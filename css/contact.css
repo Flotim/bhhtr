@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin:0 ;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+
+.container{
+    overflow-x: hidden;
+    margin: auto;
+    padding: 5rem 2rem;
+    background-color: rgba(239,233,224,255)
+    ;
+    
+}
+
+
+
+nav{
+    background-color: rgba(239,233,224,255);
+    margin: auto;
+    padding: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    transition: top 0.5s ease-in-out, position 0.5s ease-in;
+    z-index: 1000;
+    
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: rgba(239,233,224,255)
+
+}
+
+.nav-logo{
+    max-width: 200px;
+    padding-left: 15px;
+    transition: all 0.4s ease;
+
+
+}
+
+.nav-logo:hover{
+    transform: translateY(-9px) scale(1.1);
+
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: black;
+}
+
+.telephone a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 1.5px;
+    width: 0;
+    bottom: 1;
+    left: 0;
+    background-color: #f0543f;
+    transition: all 0.4s ease;
+}
+
+.link a:hover::after{
+    width: 100%;
+
+}
+
+
+#link3 a{
+    color: #f0543f ;
+}
+
+
+.nav-links a:hover{
+    color: #f0543f;
+}
+
+
+
+
+header{
+    height: 400px;
+    background-image: url(/images/decoration-thailandaise_2048x.progressive.jpg.webp);
+    background-size: cover;
+    font-family:'Poppins', sans-serif;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden; 
+
+}
+
+header H1{
+    color: #d8e05c ;
+    font-family: "Poppins";
+    font-size: 130px;
+    font-weight: 700;
+    word-spacing: 50px;
+
+}
+
+header h2{
+    font-weight: 400;
+    color: #f0543f;
+}
+
+
+
+#section1{
+    display: flex;
+    gap: 15px;
+}
+
+.adresse{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 15px;
+    font-size: 15px;
+    color: rgb(0, 0, 0) ;
+
+
+}
+
+.adresse h2{
+    font-weight: 500;
+}
+
+.adresse h4{
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+#map{
+    padding-bottom: 15px;
+    max-width: 90%;
+}
+
+
+.horaires{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    color: #080808 ;
+}
+
+.heure{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.horaires h2{
+    font-weight: 500;
+    padding-bottom: 15px;
+    padding-top: 25px;
+}
+
+.tel{
+    height: 50%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.tel h2{
+    font-weight: 500;
+    
+}
+
+
+footer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-top: 1px black solid;
+    gap: 10px;
+    width: 70%;
+}
+
+
+
+
+footer a{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (width < 1000px){
+
+    
+    .container{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        display: table-column;
+    }
+
+    header .image::before{
+        display: none;
+    }
+
+    header H1{
+        font-size: 90px;
+    }
+
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+
+    #section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .adresse{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .adresse h4{
+        max-width: 90%;
+    }
+
+    .horaires{
+        width: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+
+
+}
+
+
+
+
+@media (width < 600px){
+
+    .container{
+        overflow-x: hidden;
+    }
+    
+    header .image::before{
+        display: none;
+    }
+
+    header H1{
+        font-size: 90px;
+    }
+
+    .imagemenu{
+        display: none;
+    }
+    
+    .menu{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    #section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone-number{
+        display: none;
+    }
+
+    .telephone i{
+        font-size: 25px;
+    }
+
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+
+}
+
+@media (width < 401px){
+
+    .container{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        display: table-column;
+    }
+    header{
+        grid-template-columns: repeat(1, 1fr);
+    
+    }
+
+    header H1{
+        font-size: 70px;
+    }
+
+    header .image{
+        grid-area: 1/1/2/2;
+    }
+
+
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+
+}
